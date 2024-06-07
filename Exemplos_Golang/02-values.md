@@ -11,14 +11,14 @@ import "fmt"
 
 func main() {
 
-    # Strings, que podem ser somadas com +.
+    // Strings, que podem ser somadas com +.
     fmt.Println("go" + "lang")
     
-    # Inteiros e flutuantes.
+    // Inteiros e flutuantes.
     fmt.Println("1+1 =", 1+1)
     fmt.Println("7.0/3.0 =", 7.0/3.0)
     
-    # Booleanos, com operadores booleanos como seria de esperar.
+    // Booleanos, com operadores booleanos como seria de esperar.
     fmt.Println(true && false)
     fmt.Println(true || false)
     fmt.Println(!true)
