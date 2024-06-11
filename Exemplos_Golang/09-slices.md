@@ -121,7 +121,7 @@ func main() {
   # 2d:  [[0] [1 2] [2 3 4]]
 ```
 
-- Dê uma olhada neste excelente [https://go.dev/blog/slices-intro](post)
+- Dê uma olhada neste excelente [post](https://go.dev/blog/slices-intro)
 no blog feito pela equipe do Go para mais detalhes sobre o design e implementação de slices em Go.
 
 Agora que vimos arrays e slices, vamos dar uma olhada na outra estrutura de dados embutida do Go: maps.
