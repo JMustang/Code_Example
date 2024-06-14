@@ -1,7 +1,7 @@
 # Maps
 
 - **"Maps"** são tipos de dados associativos integrados ao Go
-(às vezes chamados de hashes ou dicts em outras linguagens).
+  (às vezes chamados de hashes ou dicts em outras linguagens).
 
 ```go
 package main
@@ -20,7 +20,10 @@ func main() {
     m["k1"] = 7
     m["k2"] = 13
 
-    // Imprimir um mapa com, por exemplo, fmt.Println, mostrará todos os seus pares chave/valor.
+    /*
+        Imprimir um mapa com, por exemplo, fmt.Println,
+        mostrará todos os seus pares chave/valor.
+    */
     fmt.Println("map:", m)
 
     // Obtenha um valor para uma chave com nome[chave].
@@ -43,10 +46,10 @@ func main() {
     fmt.Println("map:", m)
 
     /*
-      O segundo valor de retorno opcional ao obter um valor de um mapa indica se a chave estava presente no mapa.
-      Isso pode ser usado para distinguir entre chaves ausentes e chaves com valores zero,
-      como 0 ou ''. Aqui, não precisávamos do valor em si,
-      então o ignoramos com o identificador em branco _.
+        O segundo valor de retorno opcional ao obter um valor de um mapa indica se a chave estava presente no mapa.
+        Isso pode ser usado para distinguir entre chaves ausentes e chaves com valores zero,
+        como 0 ou ''. Aqui, não precisávamos do valor em si,
+        então o ignoramos com o identificador em branco _.
     */
     _, prs := m["k2"]
     fmt.Println("prs:", prs)
@@ -64,11 +67,11 @@ func main() {
 ```
 
 - Note que mapas aparecem na forma map[k:v k:v]
-quando impressos com fmt.Println.
+  quando impressos com fmt.Println.
 
 ```bash
 # SAIDA
-$ go run maps.go 
+$ go run maps.go
 # map: map[k1:7 k2:13]
 # v1: 7
 # v3: 0

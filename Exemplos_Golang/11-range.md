@@ -1,7 +1,7 @@
 # Range
 
 - Range itera sobre elementos em uma variedade de estruturas de dados.
-Vamos ver como usar range com algumas das estruturas de dados que já aprendemos.
+  Vamos ver como usar range com algumas das estruturas de dados que já aprendemos.
 
 ```go
 package main
@@ -18,9 +18,10 @@ func main() {
     }
     fmt.Println("sum:", sum)
 
-    /* range em arrays e slices fornece tanto o índice quanto o valor para cada entrada.
-       Acima, não precisávamos do índice, então o ignoramos com o identificador em branco _. Às vezes,
-       realmente queremos os índices, no entanto.
+    /*
+        range em arrays e slices fornece tanto o índice quanto o valor para cada entrada.
+        Acima, não precisávamos do índice, então o ignoramos com o identificador em branco _. Às vezes,
+        realmente queremos os índices, no entanto.
      */
     for i, num := range nums {
         if num == 3 {
@@ -53,7 +54,7 @@ func main() {
 ```bash
 # SAIDA
 $ go run range.go
-# sum: 9 
+# sum: 9
 # index: 1
 # a -> apple
 # b -> banana

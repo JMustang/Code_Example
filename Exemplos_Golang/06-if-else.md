@@ -21,9 +21,11 @@ func main() {
         fmt.Println("8 is divisible by 4")
     }
 
-    // Uma instrução pode preceder condicionais;
-    // quaisquer variáveis declaradas nesta instrução
-    // estão disponíveis na ramificação atual e em todas as ramificações subsequentes.
+    /*
+        Uma instrução pode preceder condicionais;
+        quaisquer variáveis declaradas nesta instrução
+        estão disponíveis na ramificação atual e em todas as ramificações subsequentes.
+    */
     if num := 9; num < 0 {
         fmt.Println(num, "is negative")
     } else if num < 10 {
@@ -35,7 +37,7 @@ func main() {
 ```
 
 - Veja que você não precisa de parênteses em torno das condições no Go,
-mas os colchetes são obrigatórios.
+  mas os colchetes são obrigatórios.
 
 ```bash
 # SAIDA
@@ -47,5 +49,5 @@ $ go run if-else.go
 ```
 
 - Não há if ternário em Go,
-então você precisará usar uma instrução if completa,
-mesmo para condições básicas.
+  então você precisará usar uma instrução if completa,
+  mesmo para condições básicas.

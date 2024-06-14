@@ -24,8 +24,11 @@ func main() {
         fmt.Println("three")
     }
 
-    // Você pode usar vírgulas para separar múltiplas expressões na mesma instrução **"case"**.
-    // Também usamos o **"case"** padrão opcional neste exemplo.
+    /*
+        Você pode usar vírgulas para separar múltiplas expressões na mesma instrução
+        "case".
+        Também usamos o **"case"** padrão opcional neste exemplo.
+    */
     switch time.Now().Weekday() {
     case time.Saturday, time.Sunday:
         fmt.Println("It's the weekend")
@@ -33,8 +36,11 @@ func main() {
         fmt.Println("It's a weekday")
     }
 
-    // **"switch"** sem uma expressão é uma maneira alternativa de expressar a lógica **"if/else"**.
-    // Aqui também mostramos como as expressões **"case"** podem ser não constantes.
+    /*
+        "switch" sem uma expressão é uma maneira alternativa de expressar a lógica
+        "if/else".
+        Aqui também mostramos como as expressões **"case"** podem ser não constantes.
+    */
     t := time.Now()
     switch {
     case t.Hour() < 12:
@@ -43,9 +49,11 @@ func main() {
         fmt.Println("It's after noon")
     }
 
-    // Um tipo **"Switch"** compara tipos em vez de valores.
-    // Você pode usar isso para descobrir o tipo de um valor de interface. Neste exemplo,
-    // a variável t terá o tipo correspondente à sua cláusula.
+    /*
+        Um tipo "Switch" compara tipos em vez de valores.
+        Você pode usar isso para descobrir o tipo de um valor de interface. Neste exemplo,
+        a variável t terá o tipo correspondente à sua cláusula.
+    */
     whatAmI := func(i interface{}) {
         switch t := i.(type) {
         case bool:
@@ -64,7 +72,7 @@ func main() {
 
 ```bash
 # SAIDA
-$ go run switch.go 
+$ go run switch.go
 # Write 2 as two
 # It's a weekday
 # It's after noon

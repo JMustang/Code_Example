@@ -1,7 +1,7 @@
 # Variaveis
 
 - Em Go, as variáveis são explicitamente declaradas e usadas pelo compilador,
-por exemplo. verifique a correção do tipo das chamadas de função.
+  por exemplo. verifique a correção do tipo das chamadas de função.
 
 ```go
 package main
@@ -23,14 +23,18 @@ func main() {
     var d = true
     fmt.Println(d)
 
-    // Variáveis declaradas sem uma inicialização correspondente têm valor zero.
-    // Por exemplo, o valor zero para um int é 0.
+    /*
+        Variáveis declaradas sem uma inicialização correspondente têm valor zero.
+        Por exemplo, o valor zero para um int é 0.
+     */
     var e int
     fmt.Println(e)
 
-    // A sintaxe ":=" é uma abreviação para declarar e inicializar uma variável,
-    // por ex. para var f string = "apple" neste caso.
-    // Esta sintaxe está disponível apenas dentro de funções.
+    /*
+        A sintaxe ":=" é uma abreviação para declarar e inicializar uma variável,
+        por ex. para var f string = "apple" neste caso.
+        Esta sintaxe está disponível apenas dentro de funções.
+    */
     f := "apple"
     fmt.Println(f)
 }
